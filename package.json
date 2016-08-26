@@ -1,0 +1,33 @@
+{
+  "name": "like-bike",
+  "version": "0.0.0",
+  "description": "like bike subscribe page",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Rus0d/like-bike.git"
+  },
+  "keywords": [
+    "like",
+    "bike"
+  ],
+  "author": "Rus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rus0d/like-bike/issues"
+  },
+  "homepage": "https://github.com/Rus0d/like-bike#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uncss": "^1.0.6"
+  }
+}

@@ -1,0 +1,130 @@
+.content-done {
+    display: block;
+    position: relative;
+    padding: 4% 55px 14.5% 0;
+    background-color: #e4ede6;
+}
+
+.content-done .be-in-trend {
+    display: inline-block;
+    background-image: url(../images/icons/dotted-background.png);
+    margin: 0 0 0 -55px;
+    padding: 3.5% 20% 8% 115px;
+}
+
+.content-done .greeting {
+    display: block;
+    font: 400 57px/1.2 'Russo One', 'Arial', 'Helvetica', sans-serif;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.content-done .greeting .greeting-style {
+    color: #058bdc;
+}
+
+.content-done .content-text {
+    font: 300 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #000000;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    max-width: 830px;
+}
+
+.content-done .hyro {
+    display: block;
+    position: absolute;
+}
+
+.content-done .hyro1 {
+    width: 19%;
+    left: 30px;
+    bottom: -17px;
+}
+
+.content-done .hyro2 {
+    width: 45%;
+    right: -25px;
+    bottom: 0px;
+}
+
+@media (max-width: 768px) {
+
+    .content-done {
+        padding: 4% 55px 15% 0;
+    }
+
+    .content-done {
+        padding: 4% 55px 6% 0;
+    }
+
+    .content-done .be-in-trend {
+        margin: 0;
+        padding: 30px 55px 30px 55px;
+    }
+
+    .content-done .hyro1 {
+        width: 17%;
+        left: 0;
+        bottom: -25px;
+    }
+
+    .content-done .hyro2 {
+        width: 30%;
+        right: 0;
+        bottom: -28px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    .content-done .greeting {
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .content-done .greeting {
+        font-size: 42px;
+    }
+
+    .content-done .content-text {
+        font-size: 18px;
+    }
+
+    .content-done {
+        padding: 25px 0 170px 0;
+    }
+
+    .content-done .be-in-trend {
+        display: block;
+        margin: 0;
+        padding: 20px 20px 85px 20px;
+    }
+
+    .content-done .hyro1 {
+        display: none;
+    }
+
+    .content-done .hyro2 {
+        width: 65%;
+        right: 0;
+        /* left: 0; */
+        margin: auto;
+        bottom: 15px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .content-done .hyro2 {
+        width: 85%;
+        bottom: 20px;
+    }
+
+}

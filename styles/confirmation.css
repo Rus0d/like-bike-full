@@ -1,0 +1,194 @@
+.content-conf {
+    display: block;
+    position: relative;
+    padding: 4% 55px 15% 0;
+    background-color: #f0f0e8;
+}
+
+.content-conf .be-in-trend {
+    display: inline-block;
+    background-image: url(../images/icons/dotted-background.png);
+    margin: 0 0 0 -55px;
+    padding: 3.5% 12.7% 5% 115px;
+}
+
+.content-conf .greeting {
+    display: block;
+    font: 400 57px/1.2 'Russo One', 'Arial', 'Helvetica', sans-serif;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.content-conf .greeting .greeting-style {
+    color: #058bdc;
+}
+
+.content-conf .content-text {
+    font: 300 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #000000;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    max-width: 830px;
+}
+
+.content-conf .hyro {
+    display: block;
+    position: absolute;
+}
+
+.content-conf .hyro1 {
+    width: 20%;
+    left: -40px;
+    bottom: -70px;
+}
+
+.content-conf .hyro2 {
+    width: 26%;
+    right: 10px;
+    bottom: -65px;
+}
+
+@media (max-width: 1600px) {
+
+    .content-conf .hyro1 {
+        width: 20%;
+        left: -40px;
+        bottom: 20px;
+    }
+
+    .content-conf .hyro2 {
+        width: 26%;
+        right: 10px;
+        bottom: 0;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    .content-conf .hyro1 {
+        width: 20%;
+        left: -40px;
+        bottom: -60px;
+    }
+
+    .content-conf .hyro2 {
+        width: 24%;
+        right: 10px;
+        bottom: -40px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .content-conf {
+        padding: 4% 55px 6% 0;
+    }
+
+    .content-conf .wrapper header {
+        padding: 0;
+    }
+
+    .content-conf .hyro1 {
+        width: 17%;
+        left: -25px;
+        bottom: -15px;
+    }
+
+    .content-conf .hyro2 {
+        width: 30%;
+        right: -55px;
+        bottom: -20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .content-conf {
+        padding: 4% 55px 6.1% 0;
+    }
+
+    .content-conf .be-in-trend {
+        margin: 0;
+        padding: 30px 55px 30px 55px;
+    }
+
+    .content-conf .hyro1 {
+        width: 17%;
+        left: 10px;
+        bottom: -25px;
+    }
+
+    .content-conf .hyro2 {
+        width: 24%;
+        right: 0;
+        bottom: -20px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    .content-conf .greeting {
+        font-size: 45px;
+    }
+
+    .content-conf .hyro1 {
+        width: 20%;
+        left: 0;
+        bottom: -20px;
+    }
+
+    .content-conf .hyro2 {
+        width: 29%;
+        right: 0;
+        bottom: -22px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .content-conf .greeting {
+        font-size: 42px;
+    }
+
+    .content-conf .content-text {
+        font-size: 18px;
+    }
+
+    .content-conf {
+        padding: 25px 0 170px 0;
+    }
+
+    .content-conf .be-in-trend {
+        display: block;
+        margin: 0;
+        padding: 20px 20px 85px 20px;
+    }
+
+    .content-conf .hyro1 {
+        display: none;
+    }
+
+    .content-conf .hyro2 {
+        width: 45%;
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: -5px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .content-conf .hyro2 {
+        width: 58%;
+        bottom: 0;
+    }
+
+}
