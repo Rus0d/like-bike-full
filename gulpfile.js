@@ -1,6 +1,4 @@
 var gulp = require('gulp'),
-    renameCss = require('gulp-rename'),
-    uncss = require('gulp-uncss'),
     notify = require('gulp-notify'),
     minifyCss = require('gulp-minify-css'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -14,9 +12,6 @@ gulp.task('stylesCompiler', function () {
     gulp.src('styles/styleConstructor.css')
         .pipe(concatCss("styles.css"))
         .pipe(autoprefixer({ browsers: ["> 0%"] }))
-        //.pipe(uncss({
-        //    html: 'dist/*.html'
-        //}))
         .pipe(minifyCss())
         .pipe(gulp.dest('dist/styles'))
         .pipe(browserSync.reload({stream:true}))
@@ -44,5 +39,5 @@ gulp.task('watch', function () {
     gulp.watch(['styles/*.css', 'dist/*.html'], ['stylesCompiler', 'html']);
 });
 
-// npm install --save-dev gulp-rename gulp-notify gulp-minify-css gulp-autoprefixer browser-sync gulp-concat-css gulp-uncss
+// npm install --save-dev gulp-notify gulp-minify-css gulp-autoprefixer browser-sync gulp-concat-css
 
