@@ -1,259 +1,103 @@
-.content-sub {
-    display: block;
+/* MAIN SLIDER BEGIN */
+
+.main-slider {
     position: relative;
-    padding: 4% 55px 8% 0;
-    background-color: #e8f0f2;
-}
-
-.content-sub .be-in-trend {
-    display: inline-block;
-    background-image: url(../images/icons/dotted-background.png);
-    margin: 0 0 0 -55px;
-    padding: 3.5% 12.7% 6.1% 115px;
-}
-
-.content-sub .greeting {
-    display: block;
-    font: 400 57px/1.2 'Russo One', 'Arial', 'Helvetica', sans-serif;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.content-sub .greeting .greeting-style {
-    color: #058bdc;
-}
-
-.content-sub .content-text {
-    font: 300 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: #000000;
-    margin-bottom: 15px;
-    display: block;
     width: 100%;
-    max-width: 545px;
+    min-height: 100vh;
+    padding: 145px 55px 40px 55px;
 }
 
-.content-sub .be-in-trend form {
+
+
+/* MAIN SLIDER ENDS */
+
+/* SUBSCRIBE BEGIN */
+
+.subscribe {
+    max-width: 1490px;
+    width: 93%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #e8f0f2;
+    padding: 45px 10px 15px 10px;
+}
+
+.subscribe .join-us {
+    font: 700 50px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subscribe .content-text {
+    font: 300 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subscribe form {
     display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0;
     white-space: nowrap;
+    text-align: center;
 }
 
-.content-sub .be-in-trend form input[type=text] {
-    width: 260px;
-    height: 40px;
+.subscribe form input[type=email] {
+    width: 65%;
+    height: 55px;
     display: inline-block;
-    border: 1px solid #bcbcbc;
-    outline: none;
-    background-color: white;
-    padding: 0 10px;
-    text-align: left;
-    margin-right: 10px;
-    margin-bottom: 15px;
-    font: 400 14px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    box-sizing: border-box;
-}
-
-.content-sub .be-in-trend form input[type=email] {
-    width: 260px;
-    height: 40px;
-    display: inline-block;
-    border: 1px solid #bcbcbc;
+    border: none;
     outline: none;
     background-color: white;
     padding: 0 15px;
     text-align: left;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 30px;
-    font: 400 14px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font: 400 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
     box-sizing: border-box;
 }
 
-.content-sub .be-in-trend form input[type=submit] {
-    width: 215px;
-    height: 40px;
+.subscribe form input[type=submit] {
+    width: 30%;
+    height: 55px;
     display: inline-block;
     border: none;
     outline: none;
     background-color: #058bdc;
     text-align: center;
-    font: 400 16px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font: 400 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
     color: #ffffff;
     cursor: pointer;
 }
 
-.content-sub .hyro {
-    display: block;
-    position: absolute;
-}
 
-.content-sub .hyro1 {
-    width: 14%;
-    left: 50px;
-    bottom: -30px;
-}
+@media (max-width: 500px) {
 
-.content-sub .hyro2 {
-    width: 33%;
-    right: -55px;
-    bottom: -30px;
-}
-
-@media (max-width: 1200px) {
-
-    .content-sub .be-in-trend form {
-        white-space: normal;
-    }
-    
-}
-
-@media (max-width: 1050px) {
-
-    .content-sub {
-        padding: 4% 55px 6% 0;
+    .subscribe .join-us {
+        font-size: 30px;
     }
 
-    .content-sub .wrapper header {
-        padding: 0;
-    }
-
-    .content-sub .hyro1 {
-        width: 13.4%;
-        left: 50px;
-        bottom: -30px;
-    }
-
-    .content-sub .hyro2 {
-        width: 33%;
-        right: -55px;
-        bottom: -50px;
-    }
-
-}
-
-@media (max-width: 960px) {
-
-    .content-sub .be-in-trend form input[type=text] {
-        width: 100%;
-        max-width: 320px;
-        display: block;
-    }
-
-    .content-sub .be-in-trend form input[type=email] {
-        width: 100%;
-        max-width: 320px;
-        display: block;
-    }
-
-    .content-sub .be-in-trend form input[type=submit] {
-        width: 100%;
-        max-width: 320px;
-        display: block;
-    }
-
-    .content-sub .hyro1 {
-        width: 20%;
-        left: -40px;
-        bottom: -45px;
-    }
-
-    .content-sub .hyro2 {
-        width: 47%;
-        right: 0;
-        bottom: -25px;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .content-sub {
-        padding: 4% 55px 6.1% 0;
-    }
-
-    .content-sub .be-in-trend {
-        margin: 0;
-        padding: 30px 55px 30px 55px;
-    }
-
-    .content-sub .hyro1 {
-        width: 15%;
-        left: 0;
-        bottom: -31px;
-    }
-
-}
-
-@media (max-width: 675px) {
-
-    .content-sub .greeting {
-        font-size: 45px;
-    }
-
-    .content-sub .hyro1 {
-        width: 19%;
-        left: 0;
-        bottom: -40px;
-    }
-
-    .content-sub .hyro2 {
-        width: 40%;
-        right: 0;
-        bottom: -35px;
-    }
-
-}
-
-@media (max-width: 540px) {
-
-    .content-sub .greeting {
-        font-size: 42px;
-    }
-
-    .content-sub .content-text {
+    .subscribe .content-text {
         font-size: 18px;
     }
 
-    .content-sub {
-        padding: 25px 0 170px 0;
+    .subscribe form {
+        white-space: normal;
     }
 
-    .content-sub .be-in-trend {
-        display: block;
-        margin: 0;
-        padding: 20px 20px 85px 20px;
+    .subscribe form input[type=email] {
+        width: 100%;
+        margin-right: 0;
     }
 
-    .content-sub .be-in-trend form input[type=text] {
-        max-width: 100%;
-    }
-
-    .content-sub .be-in-trend form input[type=email] {
-        max-width: 100%;
-    }
-
-    .content-sub .be-in-trend form input[type=submit] {
-        max-width: 100%;
-    }
-
-    .content-sub .hyro1 {
-        display: none;
-    }
-
-    .content-sub .hyro2 {
-        width: 50%;
-        right: 0;
-        left: 0;
-        margin: auto;
-        bottom: 27px;
+    .subscribe form input[type=submit] {
+        width: 100%;
     }
 
 }
 
-@media (max-width: 440px) {
-
-    .content-sub .hyro2 {
-        width: 65%;
-        bottom: 20px;
-    }
-
-}
-
+/* SUBSCRIBE ENDS */
