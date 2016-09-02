@@ -9,108 +9,237 @@ body {
 body .wrapper {
     display: block;
     position: relative;
-    max-width: 1600px;
+    max-width: 1620px;
     margin: 0 auto;
-    padding: 20px 55px 32px 55px;
+    padding: 145px 10px 225px 10px;
     min-height: 100%;
 }
 
+/* HEADER BEGIN */
+
 .wrapper header {
     display: block;
-    position: relative;
-    padding: 0 0 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 1620px;
+
+    padding: 10px 10px 20px 10px;
+}
+
+.menu-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .like-bike-logo {
-    max-width: 480px;
-    display: block;
-    box-sizing: border-box;
+    max-width: 320px;
+    min-width: 260px;
+    display: inline-block;
     width: 100%;
 }
 
+.logo-holder {
+    display: inline-block;
+    flex-basis: 39%;
+}
+
 .like-bike-menu {
-    display: block;
-    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
     font-size: 0;
-    text-align: right;
+    flex-basis: 100%;
 }
 
 .like-bike-menu li {
     display: inline-block;
-    width: 20%;
-    max-width: 210px;
-    min-width: 137px;
+    width: 16%;
+    position: relative;
+    vertical-align: top;
+}
+
+.like-bike-menu li:last-child {
+    width: 4%;
+    height: 60px;
     vertical-align: bottom;
+}
+
+.like-bike-menu .search-btn {
+    width: 21px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-image: url("../images/icons/likebike-search.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .like-bike-menu li a {
     display: block;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .like-bike-menu .like-icon {
     display: block;
+    width: 70%;
     margin: 0 auto;
 }
 
 .like-bike-menu .like-types {
     display: block;
     text-align: center;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 0 0;
 
     font: 400 14px/1 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: #222222;
+    color: #208dcd;
+    /*word-wrap: break-word;*/
 }
 
-footer {
-    display: block;
-    position: relative;
-    margin-top: -32px;
-}
+@media (max-width: 1000px) {
 
-footer p {
-    font: 400 14px/32px 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    text-align: center;
-    color: #000000;
-}
-
-@media (max-width: 1050px) {
-
-    .wrapper header {
-        padding: 0;
-    }
-
-}
-
-@media (max-width: 795px) {
-
-    .like-bike-menu {
-        text-align: center;
+    .like-bike-menu .like-types {
+        font-size: 12px;
     }
 
 }
 
 @media (max-width: 768px) {
 
-    body .wrapper {
-        padding: 20px 5px 32px 5px;
-    }
 
-    .like-bike-logo {
-        padding: 0 20px;
+
+}
+
+/* HEADER END */
+
+/* FOOTER BEGIN */
+
+footer {
+    display: block;
+    position: relative;
+    padding: 10px 10px 15px 10px;
+    margin: -225px auto 0 auto;
+    width: 100%;
+    max-width: 1620px;
+}
+
+footer .footer-menu-holder {
+    display: flex;
+    padding: 30px 0;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #f0f0e8;
+}
+
+footer .footer-list {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    flex-basis: 77%;
+}
+
+footer .social-btn {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    flex-basis: 23%;
+    text-align: right;
+}
+
+footer .footer-list li {
+    display: inline-block;
+    margin-right: 7%;
+    vertical-align: top;
+    text-align: left;
+}
+
+footer .footer-list li:last-child {
+    margin-right: 0;
+}
+
+footer .footer-list li p {
+    font: 400 18px/1 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #000000;
+}
+
+footer .social-btn li {
+    display: inline-block;
+    margin-left: 10%;
+    vertical-align: top;
+    text-align: right;
+}
+
+footer .social-btn li:first-child {
+    margin-left: 0;
+}
+
+footer .social-btn li a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-size: 100% 100%;
+}
+
+footer .social-btn li .facebook {
+    background-image: url("../images/icons/facebook.png");
+}
+
+footer .social-btn li .vk {
+    background-image: url("../images/icons/vk.png");
+}
+
+footer .social-btn li .insta {
+    background-image: url("../images/icons/insta.png");
+}
+
+footer .social-btn li .youtube {
+    background-image: url("../images/icons/youtube.png");
+}
+
+footer .footer-bottom {
+    position: relative;
+    padding-top: 20px;
+}
+
+footer .footer-logo-bottom {
+    display: block;
+    max-width: 200px;
+    min-height: 57px;
+    margin: 0 auto 10px auto;
+    background-image: url("../images/icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+footer .footer-bottom p {
+    font: 400 14px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+@media (max-width: 1120px) {
+
+    footer .footer-list li p {
+        font-size: 14px;
     }
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
-    .like-bike-menu li {
-        width: 33.3%;
-        min-width: 100px;
-        margin-bottom: 25px;
-    }
-
-    .like-bike-menu .like-types {
-        display: none;
+    footer .footer-list li {
+        margin-right: 5%;
     }
 
 }
+
+/* FOOTER END */

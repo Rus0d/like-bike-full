@@ -1,9 +1,7 @@
 $(function() {
-    positionCalculator();
 });
 
 $(window).resize(function () {
-    positionCalculator();
 });
 
 function positionCalculator() {
