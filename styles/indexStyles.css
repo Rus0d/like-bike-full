@@ -4,10 +4,64 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 145px 55px 40px 55px;
-    background-color: #208dcd;
+    padding: 145px 55px 28vh 55px;
 }
 
+.main-slider .top-banner-wrapper {
+    width: 100%;
+    height: 72vh;
+    background-image: url("../images/pic/top-banner-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0 0 0;
+}
+
+.main-slider .top-banner-wrapper .top-banner-text {
+    width: 67%;
+    transform: translateX(-55px);
+    padding: 35px 5% 35px 30px;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    background-image: url(../images/icons/dotted-background.png);
+    background-repeat: repeat;
+}
+
+.top-banner-wrapper .top-banner-text h3 {
+    font: 400 72px/1.2 'Russo One', 'Arial', 'Helvetica', sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.top-banner-wrapper .top-banner-text h3 span {
+    color: #058bdc;
+}
+
+.top-banner-wrapper .top-banner-text p {
+    font: 300 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.top-banner-wrapper .top-banner-text .top-banner-btn {
+    font: 300 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: white;
+    text-align: center;
+
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    background-color: #058bdc;
+    cursor: pointer;
+}
+
+.main-slider .top-banner-wrapper .top-banner-img {
+    display: inline-block;
+    position: absolute;
+    width: 43%;
+    bottom: 13.5%;
+    left: 5%;
+}
 
 
 /* MAIN SLIDER ENDS */
