@@ -20,6 +20,7 @@ $(function() {
 
     $(window).resize(function(){
 
+        
     });
 
     function menuInit() {
