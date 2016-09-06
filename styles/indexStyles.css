@@ -614,10 +614,6 @@
         padding: 0 55px 95px 0;
     }
 
-/*    .tech-block .manual .left-column li:last-child {
-        padding: 40px 0 0 15px;
-    }*/
-
 }
 
 @media (max-width: 620px) {
@@ -631,27 +627,60 @@
     }
 
 }
-/*
+
 @media (max-width: 500px) {
 
+    .tech-block .manual {
+        margin-bottom: 30px;
+    }
+
     .tech-block .manual .left-column li {
-        display: inline-block;
-        position: relative;
-        width: 50%;
-        vertical-align: top;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     .tech-block .manual .left-column li:first-child {
-        padding-right: 25px;
+        padding-right: 0;
     }
 
     .tech-block .manual .left-column li:last-child {
         margin-top: 25px;
-        padding: 80px 20px 0 15px;
+        padding: 20px 0 0 15px;
+    }
+
+    .tech-block .support {
+        padding-top: 20px;
+    }
+
+    .tech-block .manual .left-column .manual-vertical-line {
+        height: 150px;
+    }
+
+    .tech-block .support .support-vertical-line {
+        width: 220px;
+    }
+
+    .tech-block .support .img-holder {
+        padding: 0;
+    }
+
+    .tech-block .support h4 {
+        margin-left: 15px;
+    }
+
+    .tech-block .support .support-btn {
+        display: block;
+        position: static;
+        margin: 0 0 10px 15px;
+    }
+
+    .tech-block h4 {
+        font-size: 25px;
     }
 
 }
-*/
+
 
 /* TECH ENDS */
 
