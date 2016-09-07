@@ -43,7 +43,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 145px 55px 28vh 55px;
+    padding: 145px 55px 0 55px;
 }
 
 .main-slider .top-banner-wrapper {
@@ -101,7 +101,7 @@
     display: inline-block;
     position: absolute;
     width: 43%;
-    bottom: 22vh;
+    bottom: 5vh;
     left: 5%;
 }
 
@@ -611,7 +611,7 @@
 @media (max-width: 725px) {
 
     .tech-block {
-        padding: 0 55px 95px 0;
+        padding: 20px 55px 95px 0;
     }
 
 }

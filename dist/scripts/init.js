@@ -1,6 +1,7 @@
 $(function() {
 
     var menuList = {},
+        harr = [],
         menuancor = $(".anchor"),
         windowHeight = $(window).height(),
         previousScrollTop = $(window).scrollTop(),
@@ -10,7 +11,7 @@ $(function() {
 
 
     menuInit();
-    navMenuChecker();
+    navMenuChecker.call(this);
 
     $(window).scroll(function(){
 
@@ -19,8 +20,64 @@ $(function() {
     });
 
     $(window).resize(function(){
+        windowHeight = $(window).height();
 
+        scroll();
     });
+
+    function scroll() {
+        menuancor.each(function (i, elem) {
+            harr.push($(elem).innerHeight());
+        });
+
+        if(Math.max.apply(null, harr) <= windowHeight) {
+
+            $(window).on("mousewheel", _.debounce(function(e){
+
+                if((e.deltaY < 0) && (menuancor.eq(menuancor.length - 1).offset().top > $(window).scrollTop())) {
+
+                    menuancor.each(function (i, elem) {
+
+                        if( ($(elem).offset().top) >= ($(window).scrollTop() + windowHeight) ) {
+
+                            $('html, body').animate({scrollTop: $(elem).offset().top}, 500);
+
+                            return false;
+
+                        }
+
+                    });
+
+                    return false;
+
+                }
+                else if((e.deltaY > 0) && ( (menuancor.eq(menuancor.length - 1).offset().top + menuancor.eq(menuancor.length - 1).innerHeight()) >= $(window).scrollTop())) {
+
+                    menuancor.each(function (i, elem) {
+
+                        if( ($(elem).offset().top + $(elem).innerHeight()) >= $(window).scrollTop() ) {
+
+                            $('html, body').animate({scrollTop: $(elem).offset().top}, 500);
+
+                            return false;
+
+                        }
+
+                    });
+
+                    return false;
+
+                }
+                else {
+
+                }
+
+            }, 700, true));
+
+        }
+    }
+
+    scroll();
 
     function menuInit() {
 
