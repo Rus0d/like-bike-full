@@ -15,6 +15,64 @@ body .wrapper {
     min-height: 100%;
 }
 
+
+/* BTN BEGIN */
+
+.blue-btn {
+    font: 400 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: white;
+    text-align: center;
+
+    display: inline-block;
+    background-color: #058bdc;
+    border: 1px solid #058bdc;
+    cursor: pointer;
+    transition: 0.35s ease-in;
+}
+
+@media (min-width: 768px) {
+
+    .blue-btn:hover {
+        background-color: #ffffff;
+        color: #058bdc;
+    }
+
+}
+
+.blue-btn:active {
+    background-color: #ffffff;
+    color: #058bdc;
+}
+
+.white-btn {
+    font: 400 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    color: #058bdc;
+    text-align: center;
+
+    display: inline-block;
+    border: 1px solid #058bdc;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.35s ease-in;
+}
+
+@media (min-width: 768px) {
+
+    .white-btn:hover {
+        background-color: #058bdc;
+        color: #ffffff;
+    }
+
+}
+
+.white-btn:active {
+    background-color: #058bdc;
+    color: #ffffff;
+}
+
+/* BTN ENDS */
+
+
 /* HEADER BEGIN */
 
 .wrapper header {
@@ -535,29 +593,7 @@ footer .footer-bottom p {
 .subscribe form input[type=submit] {
     width: 30%;
     height: 55px;
-    display: inline-block;
-    border: 1px solid #058bdc;
     outline: none;
-    background-color: #058bdc;
-    text-align: center;
-    font: 400 22px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: #ffffff;
-    cursor: pointer;
-    transition: 0.35s ease-in;
-}
-
-@media (min-width: 768px) {
-
-    .subscribe form input[type=submit]:hover {
-        background-color: #ffffff;
-        color: #058bdc;
-    }
-
-}
-
-.subscribe form input[type=submit]:active {
-    background-color: #ffffff;
-    color: #058bdc;
 }
 
 @media (max-width: 768px) {
@@ -571,6 +607,10 @@ footer .footer-bottom p {
 @media (max-width: 545px) {
 
     .subscribe-wrapper {
+        padding: 0;
+    }
+
+    .index .subscribe-wrapper {
         padding: 0 55px 0 0;
     }
 
@@ -598,3 +638,34 @@ footer .footer-bottom p {
 }
 
 /* SUBSCRIBE ENDS */
+
+
+/* BREADCRUMBS BEGIN */
+
+.breadcrumbs {
+    padding: 165px 0 10px 0;
+}
+
+.breadcrumbs p {
+    text-align: left;
+    font: 400 12px/1.2 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+
+.breadcrumbs p .link-crumb {
+    color: #008ad2;
+}
+
+.breadcrumbs p .current-crumb {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+
+    .breadcrumbs {
+        padding: 70px 0 10px 0;
+    }
+
+}
+
+/* BREADCRUMBS ENDS */
+

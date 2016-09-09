@@ -85,31 +85,8 @@
 }
 
 .top-banner-wrapper .top-banner-text .top-banner-btn {
-    font: 400 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: white;
-    text-align: center;
-
-    display: inline-block;
     width: 180px;
     height: 45px;
-    background-color: #058bdc;
-    border: 1px solid #058bdc;
-    cursor: pointer;
-    transition: 0.35s ease-in;
-}
-
-@media (min-width: 768px) {
-
-    .top-banner-wrapper .top-banner-text .top-banner-btn:hover {
-        background-color: #ffffff;
-        color: #058bdc;
-    }
-
-}
-
-.top-banner-wrapper .top-banner-text .top-banner-btn:active {
-    background-color: #ffffff;
-    color: #058bdc;
 }
 
 .main-slider .top-banner-wrapper .top-banner-img {
@@ -242,31 +219,8 @@
 }
 
 .products-text .banner-btn {
-    font: 400 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: #058bdc;
-    text-align: center;
-
-    display: inline-block;
     width: 180px;
     height: 45px;
-    border: 1px solid #058bdc;
-    background-color: transparent;
-    cursor: pointer;
-    transition: 0.35s ease-in;
-}
-
-@media (min-width: 768px) {
-
-    .products-text .banner-btn:hover {
-        background-color: #058bdc;
-        color: #ffffff;
-    }
-
-}
-
-.products-text .banner-btn:active {
-    background-color: #058bdc;
-    color: #ffffff;
 }
 
 .products .vertical-line {
@@ -529,31 +483,8 @@
 }
 
 .tech-block .manual .left-column .manual-btn {
-    font: 400 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: #058bdc;
-    text-align: center;
-
-    display: inline-block;
     width: 180px;
     height: 45px;
-    background-color: transparent;
-    border: 1px solid #058bdc;
-    cursor: pointer;
-    transition: 0.35s ease-in;
-}
-
-@media (min-width: 768px) {
-
-    .tech-block .manual .left-column .manual-btn:hover {
-        background-color: #058bdc;
-        color: #ffffff;
-    }
-
-}
-
-.tech-block .manual .left-column .manual-btn:active {
-    background-color: #058bdc;
-    color: #ffffff;
 }
 
 .tech-block .support {
@@ -582,42 +513,19 @@
 }
 
 .tech-block .support .support-btn {
-    font: 400 16px/45px 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    color: #058bdc;
-    text-align: center;
-
     width: 180px;
     height: 45px;
-    background-color: transparent;
-    border: 1px solid #058bdc;
-    cursor: pointer;
 
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.35s ease-in;
-}
-
-@media (min-width: 768px) {
-
-    .tech-block .support .support-btn:hover {
-        background-color: #058bdc;
-        color: #ffffff;
-    }
-
-}
-
-.tech-block .support .support-btn:active {
-    background-color: #058bdc;
-    color: #ffffff;
 }
 
 .tech-block .support .img-holder img {
     display: block;
     width: 100%;
 }
-
 
 .tech-block h4 {
     display: block;

@@ -7,12 +7,6 @@ $(function() {
         previousScrollTop = $(window).scrollTop(),
         distance = windowHeight / 2;
 
-    $('#nav-icon').click(function(){
-        $(this).toggleClass('open');
-        $('.adaptive-menu-container').toggleClass('open');
-    });
-
-
     menuInit();
     navMenuChecker.call(this);
 
