@@ -1,0 +1,36 @@
+.product-main-block {
+    height: 500px;
+    background-color: #00d4f4
+}
+
+.product-main-block .product-header {
+    background-image: url("../images/icons/dotted-product-background.png");
+    background-repeat: repeat;
+    padding: 20px 20px 55px 20px;
+}
+
+.product-main-block .product-header h2 {
+    font: 400 32px/1 'Russo One', 'Arial', 'Helvetica', sans-serif;
+    color: #000000;
+    text-align: left;
+}
+
+.product-main-block .product-header h2 span {
+    color: #058bdc;
+}
+
+
+.product-main-block .main-slider {
+    width: 76%;
+}
+
+.product-main-block .main-slider .slider-wrapper {
+    width: 100%;
+    max-width: 1150px;
+}
+
+
+.product-main-block .spec-list {
+    width: 24%;
+}
+

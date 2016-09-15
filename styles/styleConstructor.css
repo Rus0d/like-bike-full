@@ -1,6 +1,7 @@
 @import url("/eric-meyers-reset.css");
-@import url("/swiper.min.css");
+@import url("/swiper.css");
 @import url("/template.css");
+@import url("/productPageStyles.css");
 @import url("/categoryListStyles.css");
 @import url("/indexStyles.css");
 
