@@ -39,7 +39,7 @@
 
 /* MAIN SLIDER BEGIN */
 
-.main-slider {
+.index .main-slider {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -108,7 +108,7 @@
 
 @media (max-width: 768px) {
 
-    .main-slider {
+    .index .main-slider {
         padding: 70px 55px 0 55px;
     }
 
