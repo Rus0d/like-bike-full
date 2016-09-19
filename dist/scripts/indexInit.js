@@ -19,7 +19,10 @@ $(function() {
     $(window).resize(function(){
         windowHeight = $(window).height();
 
-        scroll();
+        if($(window).width() >= 768){
+            scroll();
+        }
+
     });
 
     function scroll() {
@@ -74,7 +77,9 @@ $(function() {
         }
     }
 
-    scroll();
+    if($(window).width() >= 768){
+        scroll();
+    }
 
     function menuInit() {
 
