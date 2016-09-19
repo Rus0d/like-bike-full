@@ -97,6 +97,14 @@
     left: 5%;
 }
 
+@media (max-width: 1065px) {
+
+    .index .main-slider {
+        padding: 260px 55px 0 55px;
+    }
+
+}
+
 @media (max-width: 1000px) {
 
     .main-slider .top-banner-wrapper .top-banner-text {
