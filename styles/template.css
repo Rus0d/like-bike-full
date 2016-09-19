@@ -104,7 +104,7 @@ body .wrapper {
     background-color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 
     .wrapper header:after {
         content: "";
@@ -748,6 +748,15 @@ footer .footer-bottom p {
     }
 
 }
+
+@media (max-width: 600px) {
+
+    .subscribe-wrapper {
+        padding: 0;
+    }
+
+}
+
 
 @media (max-width: 545px) {
 
