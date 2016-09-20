@@ -32,6 +32,8 @@ $(function() {
 
         if(Math.max.apply(null, harr) <= windowHeight) {
 
+            $(window).off("mousewheel");
+
             $(window).on("mousewheel", _.debounce(function(e){
 
                 if((e.deltaY < 0) && (menuancor.eq(menuancor.length - 1).offset().top > $(window).scrollTop())) {
@@ -85,7 +87,8 @@ $(function() {
 
         menuancor.each(function(i, elem) {
             menuList = $('.pagination-wrapper .pagination').append('<li></li>').children("li");
-            menuList.eq(i).click(function() {
+            menuList.eq(i).off('click');
+            menuList.eq(i).on('click', function() {
                 $('html, body').animate({scrollTop: ($(elem).offset().top)}, 1000);
             });
         });
