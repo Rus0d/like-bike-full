@@ -104,9 +104,22 @@ body .wrapper {
     background-color: #ffffff;
 }
 
+
 @media (min-width: 769px) {
 
     .wrapper header:after {
+        content: "";
+        width: 1000%;
+        height: 10px;
+        bottom: 0;
+        display: block;
+        position: absolute;
+        left: -500%;
+        z-index: 10;
+        background-color: #ffffff;
+    }
+
+    .wrapper header:before {
         content: "";
         width: 1000%;
         height: 0;
@@ -119,6 +132,7 @@ body .wrapper {
     }
 
 }
+
 
 .menu-holder {
     display: flex;
@@ -164,12 +178,15 @@ body .wrapper {
     vertical-align: top;
 }
 
+/*
+search button
+
 .like-bike-menu li:last-child {
     width: 4%;
     height: 60px;
     vertical-align: bottom;
 }
-
+*/
 .like-bike-menu .search-btn {
     width: 21px;
     height: 22px;
@@ -614,6 +631,7 @@ footer .footer-logo-bottom {
     max-width: 200px;
     min-height: 57px;
     margin: 0 auto 10px auto;
+    background-image: url("../images/icons/logo.png");
     background-image: url("../images/icons/logo.svg");
     background-repeat: no-repeat;
     background-size: 100%;
