@@ -1,4 +1,4 @@
-/* PAGINATION BEGIN 123 */
+/* PAGINATION BEGIN */
 
 .pagination-wrapper {
     position: fixed;
@@ -408,15 +408,21 @@
     }
 
     .products li:nth-child(4) .products-img img {
-        width: 80%;
-        bottom: -5%;
-        left: 10%;
+        width: 70%;
+        bottom: -60%;
+        left: 30%;
     }
 
     .products li:nth-child(5) .products-img img {
         width: 75%;
         bottom: -40%;
         left: 20%;
+    }
+
+    .products li:nth-child(6) .products-img img {
+        width: 80%;
+        bottom: -5%;
+        left: 10%;
     }
 
     .products li .products-img .products-img-background {
