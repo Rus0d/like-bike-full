@@ -108,8 +108,8 @@ $(function() {
 
         for (var i = 0; i < menuList.length; i++) {
 
-            if (((direction=='DOWN') && (($(this).scrollTop()+windowHeight)>=menuancor.eq(i).offset().top+distance) && ($(this).scrollTop()<=(menuancor.eq(i).offset().top+menuancor.eq(i).height()-distance))) ||
-                ((direction=='UP') && ($(this).scrollTop()<=(menuancor.eq(i).offset().top+menuancor.eq(i).height()-distance)) && (($(this).scrollTop()+windowHeight)>=menuancor.eq(i).offset().top+distance))){
+            if (((direction=='DOWN') && (($(this).scrollTop() + distance) >= menuancor.eq(i).offset().top) && ($(this).scrollTop() + distance <= (menuancor.eq(i).offset().top + menuancor.eq(i).innerHeight()))) ||
+                ((direction=='UP') && ($(this).scrollTop() + distance <= (menuancor.eq(i).offset().top + menuancor.eq(i).innerHeight())) && (($(this).scrollTop() + distance) >= menuancor.eq(i).offset().top))){
                 menuList.eq(i).addClass('active');
             }
             else {
