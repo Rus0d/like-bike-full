@@ -1,4 +1,4 @@
-/* PAGINATION BEGIN */
+/* PAGINATION BEGIN 123 */
 
 .pagination-wrapper {
     position: fixed;
@@ -154,7 +154,6 @@
 
     .main-slider .top-banner-wrapper .top-banner-text {
         transform: translateX(0px);
-
     }
 
 }
