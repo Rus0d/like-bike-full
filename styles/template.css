@@ -11,7 +11,8 @@ body .wrapper {
     position: relative;
     max-width: 1620px;
     margin: 0 auto;
-    padding: 0 10px 225px 10px;
+    /*padding: 0 10px 225px 10px;*/
+    padding: 0 0 225px 0;
     min-height: 100%;
 }
 
@@ -289,7 +290,7 @@ header .search-form.visible {
 }
 
 
-@media (max-width: 1065px) {
+@media (max-width: 1024px) { /* was 1065*/
 
     .menu-holder {
         display: block;
@@ -782,9 +783,9 @@ footer .footer-bottom p {
         padding: 0;
     }
 
-    .index .subscribe-wrapper {
-        padding: 0 55px 0 0;
-    }
+    /*.index .subscribe-wrapper {
+        padding: 0;
+    }*/
 
     .subscribe .join-us {
         font-size: 25px;
@@ -831,7 +832,7 @@ footer .footer-bottom p {
     color: #000000;
 }
 
-@media (max-width: 1065px) {
+@media (max-width: 1024px) {
 
     .breadcrumbs {
         padding: 260px 0 10px 0;

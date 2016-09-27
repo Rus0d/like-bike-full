@@ -54,6 +54,7 @@
     background-size: cover;
     background-position: top center;
     padding: 50px 0 0 0;
+    background-repeat: no-repeat;
 }
 
 .main-slider .top-banner-wrapper .top-banner-text {
@@ -98,7 +99,7 @@
     left: 5%;
 }
 
-@media (max-width: 1065px) {
+@media (max-width: 1024px) {
 
     .index .main-slider {
         padding: 260px 55px 0 55px;
@@ -195,6 +196,38 @@
     .main-slider .top-banner-wrapper .top-banner-img {
         bottom: 2vh;
         left: 2%;
+    }
+
+}
+
+@media (max-width: 385px) {
+
+    .index .main-slider {
+        padding: 55px 0 0 0;
+    }
+
+    .main-slider .top-banner-wrapper {
+        padding: 30px 0 0 0;
+        background-size: 110% auto;
+    }
+
+    .main-slider .top-banner-wrapper .top-banner-text {
+        width: 71%;
+        padding: 15px 10px;
+    }
+
+    .main-slider .top-banner-wrapper .top-banner-text p {
+        font-size: 14px;
+    }
+
+    .top-banner-wrapper .top-banner-text h2 {
+        font-size: 22px;
+    }
+
+    .main-slider .top-banner-wrapper .top-banner-img {
+        bottom: 36vh;
+        left: 32%;
+        width: 52%;
     }
 
 }
@@ -515,13 +548,13 @@
     .products li:nth-child(3) .products-img img {
         width: 70%;
         bottom: -71%;
-        left: -4%;
+        left: 0;
     }
 
     .products li:nth-child(4) .products-img img {
         width: 70%;
         bottom: -71%;
-        left: -4%;
+        left: 0;
     }
 
     .products li:nth-child(5) .products-img img {
@@ -540,22 +573,40 @@
 
 @media (max-width: 385px) {
 
+    .products li .products-text {
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    .products-text h3 {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .products-text p {
+        font-size: 14px;
+        text-align: left;
+    }
+
     .products li:nth-child(2) .products-img img {
         width: 36%;
         bottom: -35%;
-        left: 2%;
+        right: 19%;
+        left: auto;
     }
 
     .products li:nth-child(3) .products-img img {
         width: 62%;
-        bottom: -39%;
-        left: 7%;
+        bottom: -69%;
+        right: 10%;
+        left: auto;
     }
 
     .products li:nth-child(4) .products-img img {
-        width: 70%;
-        bottom: -6%;
-        left: -5%;
+        width: 62%;
+        bottom: -69%;
+        right: 10%;
+        left: auto;
     }
 
     .products li:nth-child(5) .products-img img {
@@ -586,19 +637,18 @@
     .products li:nth-child(2) .products-img img {
         width: 30%;
         bottom: -15%;
-        left: 2%;
     }
 
     .products li:nth-child(3) .products-img img {
-        width: 74%;
-        bottom: -3%;
-        left: -4%;
+        width: 52%;
+        bottom: -27%;
+        right: 7%;
     }
 
     .products li:nth-child(4) .products-img img {
-        width: 70%;
-        bottom: -71%;
-        left: -4%;
+        width: 52%;
+        bottom: -27%;
+        right: 7%;
     }
 
     .products li:nth-child(5) .products-img img {
