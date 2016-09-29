@@ -264,7 +264,7 @@
             </div>
             <div class="bottom-menu-wrapper">
                 <ul class="bottom-menu">
-                    <li class="bottom-menu-btn"><a href="">Записаться на тест драйв</a></li>
+                    <li class="bottom-menu-btn" id="test-drive-btn"><a href="">Записаться на тест драйв</a></li>
                     <li><a href="#">Где купить? <span class="underline"></span></a></li>
                     <li><a href="#">Инструкции <span class="underline"></span></a></li>
                     <li><a href="#">Техническая поддержка <span class="underline"></span></a></li>
@@ -311,7 +311,7 @@
                                 Запас хода электровелосипеда - 30-50 км. Like.Bike Harley Fat – это удобство, повышенная проходимость и стиль, которые говорят сами за себя.
                             </p>
                         </li>
-                        <li>
+                        <li class="hide">
                             <h5>Характеристики</h5>
                             <h6>
                                 Технические характеристики минибайка
@@ -371,6 +371,44 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="popup test-drive-form hide">
+        <div class="popup-container">
+            <div class="close-btn"></div>
+            <h3>Запись на <span>Тест</span>.Драйв</h3>
+            <p>Запишитесь на <span>ТЕСТ</span>.ДРАЙВ, ощутите мощь и силу персонального электротранспорта <span>LiKE</span>.BiKE!</p>
+            <form method="post">
+                <div class="row">
+                    <label for="name">ФИО<i>*</i></label>
+                    <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required value="" />
+                </div>
+                <div class="row">
+                    <label for="phone">Телефон<i>*</i></label>
+                    <input type="tel" id="phone" name="phone" placeholder="+38(0__) ___ __ __" required value="">
+                </div>
+                <div class="row">
+                    <label for="email">E-mail<i>*</i></label>
+                    <input type="email" id="email" name="email" placeholder="Введите Ваш e-mail" required value="" />
+                </div>
+                <div class="row">
+                    <label for="city">Город<i>*</i></label>
+                    <select size="1" name="country" id="city" required class="default">
+                        <option value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn-send blue-btn" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+    <div class="popup test-drive-answer hide">
+        <div class="popup-container">
+            <div class="close-btn"></div>
+            <h3>Запись на <span>Тест</span>.Драйв</h3>
+            <p><span>Спасибо!</span> Мы свяжемся с вами в ближайшее время и оговорим детали проведения тест-драйва.</p>
+        </div>
     </div>
 
 </div>
@@ -441,4 +479,6 @@
 <script defer="defer" type="text/javascript" src="libs/lazyYT.js"></script>
 <script defer="defer" type="text/javascript" src="scripts/adaptive-menu-btn-script.js"></script>
 <script defer="defer" type="text/javascript" src="scripts/product-page-init.js"></script>
+<script defer="defer" type="text/javascript" src="libs/select2-4.0.3/select2.js"></script>
+<script defer="defer" type="text/javascript" src="libs/maskedinput.js"></script>
 </html>

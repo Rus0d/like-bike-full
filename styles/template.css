@@ -16,6 +16,22 @@ body .wrapper {
     min-height: 100%;
 }
 
+/* SCROLL PREVENTING BEGIN */
+
+.scroll {
+    overflow: hidden;
+    -webkit-overflow-scrolling: auto !important; /* stop scrolling immediately */
+}
+
+/* SCROLL PREVENTING ENDS */
+
+/* HIDE CLASS BEGIN */
+
+.hide {
+    display: none!important;
+}
+
+/* HIDE CLASS ENDS */
 
 /* BTN BEGIN */
 
